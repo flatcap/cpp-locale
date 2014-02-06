@@ -6,7 +6,7 @@ xgettext --package-name hellogt --package-version 1.2 --default-domain hellogt -
 
 msginit --no-translator --locale es_MX --output-file hellogt_spanish.po --input hellogt.pot
 
-sed --in-place hellogt_spanish.po --expression='/"hello, world!"/,/#: / s/""/"hola mundo"/'
+sed --in-place hellogt_spanish.po --expression='/"hello, world!"/,/#: / s/""/"hola mundo"/' --expression='/"wibble"/,/#: / s/""/"wobble"/'
 
 mkdir --parents ./es_MX.utf8/LC_MESSAGES
 
